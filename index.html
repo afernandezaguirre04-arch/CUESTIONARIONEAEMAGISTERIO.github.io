@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Experto - Derecho Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-menu" class="container">
+        <h2 id="main-title">Quizz Interactivo Necesidades Específicas de Apoyo Educativo</h2>
+        <p id="subtitle">Grado en Educación Primaria - Universidad de ALmería</p>
+        <p id="author">Derechos de autor: Adrián Fernández Aguirre</p>
+        <h3 id="topic-header">Elija el Tema</h3>
+        
+        <button class="topic-btn" data-theme="tema1">Tema 1: Fuentes de Diversidad en el Alumnado</button>
+        <button class="topic-btn" data-theme="tema2" disabled>Tema 2: Necesidadas Específicas Derivadas de Déficits Sensoriales</button>
+        <button class="topic-btn" data-theme="tema3" disabled>Tema 3: Tipología de las Administraciones Públicas</button>
+        <button class="topic-btn" data-theme="tema4">Tema 4: NEAE en déficits psíquicos</button>
+
+    </div>
+
+    <div id="difficulty-selector" class="container hide">
+        <h2 id="difficulty-title">Seleccionar Dificultad</h2> 
+        
+        <button id="btn-easy" class="difficulty-btn">Fácil (35)</button>
+        <button id="btn-medium" class="difficulty-btn">Media (30)</button>
+        <button id="btn-hard" class="difficulty-btn">Difícil (15)</button>
+        
+        <button id="btn-back-to-topics" class="difficulty-btn back-to-topics-btn">Volver a Temas</button>
+    </div>
+
+    <div class="container hide" id="quiz-main">
+        <div id="quiz-header">
+            <h2 id="quiz-title">Quiz: Tema 1</h2>
+        </div>
+        
+        <div id="question-container">
+            <p id="question-text">Aquí va la pregunta...</p>
+        </div>
+        
+        <div class="stats-bar hide">
+            <h3 id="score-text">Puntuación: 0 / 0</h3>
+            <h3 id="errors-text">Errores: 0</h3>
+        </div>
+        
+        <div id="answer-buttons" class="btn-grid">
+            </div>
+
+        <div id="explanation-box" class="hide">
+            <h4 id="explanation-header"></h4>
+            <p id="explanation-text"></p>
+        </div>
+
+        <div class="quiz-footer hide">
+            <div class="controls">
+                <button id="prev-btn" class="nav-btn btn invisible">Anterior</button>
+                <button id="menu-btn" class="nav-btn menu-btn btn">Menú</button>
+                <button id="next-btn" class="nav-btn btn invisible">Siguiente</button>
+            </div>
+        </div>
+        
+        <div id="end-game-controls" class="hide">
+             <div id="result-text"></div>
+             <button id="restart-btn" class="nav-btn menu-btn btn">Volver al Menú</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
